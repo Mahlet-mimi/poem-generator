@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css">
     <title>AI Ethiopian Poem Generator </title>
 </head>
@@ -15,6 +15,7 @@
     </header>
 
     <main>
+        <div class="form-container">
         <form id="poem-form">
             <input type="text" 
             placeholder="Enter the topic of Ethiopian poem"
@@ -25,10 +26,10 @@
              id="user-instruction">
              <input type="submit" class="submit-button">
         </form>
-        <div class="poem" id="poem">
-          
-          
+         <small class="hint">i.e Country, Flower, Ethiopia or Mother </small>
         </div>
+       
+        <div class="poem hidden" id="poem"></div>
     </main>
     <footer>
         Coded by <a href="https://github.com/mahlet-mimi" target="_blank">Mahlet Nigussie</a> and is 

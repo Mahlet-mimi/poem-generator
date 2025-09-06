@@ -20,17 +20,20 @@ h1{
   line-height: 1.5;
 }
 
-form{
+.form-container{
   border-radius: 10px;
-  padding: 30px;
+  padding: 15px 20px;
   background: white;
-  display: flex;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
  margin-bottom: 30px;
 }
 
+form{
+ display: flex; 
+}
+
 .input-place{
-  padding: 16px;
+  padding: 14px;
   width: 80%;
   margin-right: 5px;
   border: 1px solid rgba(39, 33, 66, 0.5);
@@ -41,7 +44,7 @@ form{
 }
 
 .submit-button{
- padding: 14px 25px;
+ padding: 14px 20px;
  border-radius: 30px;
  background:  #885df1;
  border: 0;
@@ -50,18 +53,28 @@ form{
  width: 130px;
 }
 
+.hint{
+  line-height: 1.5;
+  opacity: 0.6;
+  font-size: 12px;
+}
+
 .poem{
 padding: 20px;
 background: white;
 margin-bottom: 30px;
 border-left: 3px solid #885df1;
 line-height: 2;
-font-size: 17px;
+font-size: 16px;
 box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
 }
 
 .poem strong{
   color: #885df1;
+}
+
+.hidden{
+  display: none;
 }
 
 a{
@@ -71,4 +84,19 @@ a{
 footer{
   text-align: center;
   font-size: 15px;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
